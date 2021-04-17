@@ -192,11 +192,13 @@ html {
     font-size: 1.2rem;
   }
   
+  .z-latest .details > h5,
   .latest .details > h5 {
     font-size: 1.25rem;
     margin-left: 0;
   }
   
+  .z-latest .details > h5,
   .latest .details > span {
     position: relative;
     right: 0;
@@ -222,6 +224,7 @@ html {
     left: -25px;
   }
   
+  .experience > .latest,
   .experience > .previous,
   .experience > .last,
   .p_training,
@@ -379,6 +382,10 @@ html {
   
   /* --------------- MEDIA QUERIES --------------- */
   @media (min-width: 550px) {
+    .parent_container > .details {
+        padding-left: 0;
+        margin-left: 98px;
+    }
     /* ----- MAIN CONTENT SECTION ----- */
     .interests > h4::before {
       left: -76px;
@@ -407,7 +414,10 @@ html {
       font-size: 1.2rem;
     }
     
-    .latest .details > h5 {
+    .z-latest .details > h5,
+    .latest .details > h5,
+    .previous .details > h5,
+    .last .details > h5 {
       font-size: 1.25rem;
       margin-left: 40px;
     }
@@ -437,15 +447,6 @@ html {
       left: -25px;
     }
     
-    .experience > .previous,
-    .experience > .last,
-    .p_training,
-    .skills,
-    .interests,
-    .references {
-      margin-top: 1em;
-    }
-    
     .experience .previous > .details {
       flex-wrap: nowrap;
     }
@@ -465,7 +466,7 @@ html {
     
     .previous .details > span {
       width: 120px;
-      margin-right: 27px;
+      margin-right: 33px;
     }
     
     .experience .last > .details {
